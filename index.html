@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Card</title>
+</head>
+<body>
+    <div class="asd">
+       <div class="front-card">
+        <img src="./images/card-logo.svg" alt=""> 
+        <h2 class="h-front">9866 6877 9110 1012</h2>
+        <div class="span">
+          <span class="name">
+            Bukola Lawal
+          </span>
+          <span class="month">
+            11/05
+          </span>
+        </div>
+       </div>
+       <div class="back-card"><p class="p-back">241</p></div>
+    </div>
+    <div class="body1">
+        <div class="container">
+          <form>
+            <div class="input-group">
+             <label>CARDHOLDER NAME</label> <br>
+             <input type="text" id="cardname" placeholder="e.g LAWAL BUKOLA"> 
+             <span id="text-error"></span> <br>
+            </div>
+           <div class="input-group">
+            <label>CARDNUMBER</label><br>
+            <input type="text" id="cardnumber" placeholder="e.g 4326714894">
+            <span id="number-error"></span> <br>
+           </div>
+           <div class="input-group">
+            <label>EXP.DATE  (MM/YY) <span class="cvc-span">CVC</span></label><br>
+           <input type="text" placeholder="MM" id="cardmonth">
+           <span id="month-error"></span> 
+           <input type="text" placeholder="YY" id="cardyear">
+           <span id="year-error"></span> 
+           <input type="text" placeholder="e.g 123" id="cardcvc">
+           <span id="cvc-error"></span>
+            <button id="btn" type="submit" onsubmit="validateForm()">CONFIRM</button><br>
+            <span id="btn-error"></span>
+          </div>
+          </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
